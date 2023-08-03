@@ -1,7 +1,8 @@
 -- import: fastn
 
 -- fastn.package: priyanka9634.github.io/linktree-3
-favicon: /-/priyanka9634.github.io/linktree-4/favicon.ico
+favicon: /-/priyanka9634.github.io/linktree-3/favicon.ico
+
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
