@@ -111,6 +111,7 @@ border-radius.px: 16
 link: $button.cta-link
 width: fill-container
 role: $inherited.types.button-medium
+color: $inherited.colors.custom.four
 text-align: center
 
 -- end: ftd.column
