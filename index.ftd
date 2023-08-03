@@ -1,40 +1,119 @@
--- ds.page: Welcome to doc-site
+
+-- ds.page:
+full-width: true
+
+-- linktree: MUSKAAN VERMA
+avatar: $assets.files.assets.avatar.svg
+bg-image: $assets.files.assets.bg.svg
+
+Lorem ipsum dolor set amet
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- button: Dribble
+cta-link: /
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+-- button: Behnace
+cta-link: /
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- button: Webflow
+cta-link: /
 
--- ds.h3: 🚀 Fast Track 
+-- button: LinkedIn
+cta-link: /
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
-
-
--- ds.h3: 🎯 Used by?
-
-Our all documentation sites uses this `doc-site` theme.
-
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
-
--- ds.h2: Learn fastn and become a pro?
-
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: linktree
 
 -- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- component linktree:
+ftd.image-src avatar:
+caption title:
+body body:
+optional ftd.image-src bg-image:
+children wrapper:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.image: $linktree.bg-image
+
+-- ftd.column:
+padding-vertical.px: 97
+max-width.fixed.px: 838
+width: fill-container
+align-content: center
+align-self: center
+color: $inherited.colors.custom.four
+
+-- ftd.image:
+src: $linktree.avatar
+
+-- ftd.text: $linktree.title
+role: $inherited.types.heading-small
+margin-top.px: 48
+margin-top.px if { ftd.device == "mobile"}: 24
+style: bold
+margin-bottom.px: 12
+margin-bottom.px if { ftd.device == "mobile"}: 8
+
+-- ftd.text:
+role: $inherited.types.copy-small
+
+$linktree.body
+
+-- ftd.column:
+children: $linktree.wrapper
+spacing.fixed.px: 23
+width: fill-container
+padding-top.px: 97
+padding-top.px if { ftd.device == "mobile"}: 87
+padding-horizontal.px if { ftd.device == "mobile"}: 16
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: linktree
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption cta-text:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+padding.px: 28
+padding.px if { ftd.device == "mobile" }: 19
+border-color: $inherited.colors.custom.four
+border-width.px: 2
+border-radius.px: 16
+
+-- ftd.text: $button.cta-text
+link: $button.cta-link
+width: fill-container
+role: $inherited.types.button-medium
+text-align: center
+
+-- end: ftd.column
+
+-- end: button
+
