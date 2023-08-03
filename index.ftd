@@ -9,16 +9,16 @@ bg-image: $assets.files.assets.bg.svg
 Lorem ipsum dolor set amet
 
 -- button: Dribble
-cta-link: /
+cta-link: index.html
 
 -- button: Behnace
-cta-link: /
+cta-link: index.html
 
 -- button: Webflow
-cta-link: /
+cta-link: index.html
 
 -- button: LinkedIn
-cta-link: /
+cta-link: index.html
 
 -- end: linktree
 
