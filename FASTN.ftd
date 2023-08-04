@@ -4,9 +4,7 @@
 favicon: /-/priyanka9634.github.io/linktree-3/favicon.ico
 
 
--- fastn.dependency: fastn-community.github.io/doc-site as doc-site
--- fastn.dependency: fastn-community.github.io/footer
--- fastn.dependency: fastn-community.github.io/roboto-typography
+
 
 -- fastn.auto-import: priyanka9634.github.io/linktree-3/FASTN/ds
 -- fastn.auto-import: priyanka9634.github.io/linktree-3/assets

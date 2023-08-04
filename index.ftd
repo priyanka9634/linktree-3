@@ -1,6 +1,6 @@
 
--- ds.page:
-full-width: true
+-- ftd.column:
+width: fill-container
 
 -- linktree: MUSKAAN VERMA
 avatar: $assets.files.assets.avatar.svg
@@ -22,7 +22,7 @@ cta-link: index.html
 
 -- end: linktree
 
--- end: ds.page
+-- end: ftd.column
 
 
 
@@ -97,6 +97,7 @@ padding-horizontal.px if { ftd.device == "mobile"}: 16
 -- component button:
 caption cta-text:
 string cta-link:
+boolean $mouse-in: false
 
 -- ftd.column:
 width: fill-container
@@ -105,12 +106,17 @@ padding.px if { ftd.device == "mobile" }: 19
 border-color: $inherited.colors.custom.four
 border-width.px: 2
 border-radius.px: 16
+background.solid if { button.mouse-in }: $inherited.colors.custom.four
+$on-mouse-enter$: $ftd.set-bool($a = $button.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.mouse-in, v = false)
+cursor: pointer
 
 -- ftd.text: $button.cta-text
 link: $button.cta-link
 width: fill-container
 role: $inherited.types.button-medium
 color: $inherited.colors.custom.four
+color if { button.mouse-in }: $inherited.colors.text-strong
 text-align: center
 
 -- end: ftd.column
